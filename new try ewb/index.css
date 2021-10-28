@@ -1,0 +1,545 @@
+
+html{
+	font-size: 62.5%;
+}
+body
+{
+	margin: 0;
+	padding: 0;
+}
+/*============== sidebr===================*/
+.side-bar{
+	width: 4.8rem;
+	height: 70vh;
+	background: linear-gradient(#005400 , #000729);
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
+	
+}
+.social-links img{
+	width: 5rem;
+	margin-bottom: 1rem;
+	padding-left: 2rem;
+	cursor: pointer;
+
+}
+.social-links{
+	width: 25px;
+	text-align: center;
+	position: absolute;
+	top: 31%;
+	transform: translate(-50%);
+}
+
+/*============media querry for sidebr icons=================*/
+@media(max-width: 444px){
+
+	.social-links img{
+	width: 5rem;
+	margin-bottom: 1rem;
+	padding-left: 2.5rem;
+	cursor: pointer;
+
+}
+
+	.social-links{
+	width: 25px;
+	text-align: center;
+	position: absolute;
+	top: 31%;
+	margin-top: 24rem;
+}
+
+}
+/*==========STP LOGO=================*/
+#STP{
+	font-size: 2.9rem;
+	color: white;
+
+}
+/*============navbar margin===============*/
+#navMargin{
+    margin-left:25px ;
+    margin-right:25px ;
+
+}
+
+/*===========top backgrond=====================*/
+section
+{
+
+	position: relative;	
+	width: 100%;
+	height: 70vh;
+	background: url(7.jpeg);
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+section .wave
+{
+	position: absolute;
+	width: 100%;
+	height: 143px;
+	bottom: 0;
+	left: 0;
+	background: url(wave.png);
+	opacity: .9;
+	animation: animate 10s linear infinite;
+}
+section .wave:before
+{
+	content: '';
+	width: 100%;
+	height: 143px;
+	background: url(wave.png);	
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: .7;
+	animation: animate-reverse 10s linear infinite;
+
+
+}
+
+
+
+section .wave:after
+{
+	content: '';
+	width: 100%;
+	height: 143px;
+	background: url(wave.png);	
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity:0.3;
+	animation-delay: -5s;
+	animation: animate 20s linear infinite;
+
+}
+@keyframes animate
+{
+	0%
+	{
+		background-position: 0;
+	}
+	100%
+	{
+		background-position: 136.0rem;
+	}
+}
+
+@keyframes animate-reverse
+{
+	0%
+	{
+		background-position: 136.0rem;
+	}
+	100%
+	{
+		background-position: 0;
+	}
+}
+/*============media querry for responsive text===============*/
+
+@media(max-width: 1200px)
+{
+	html{
+		font-size: 55%;
+
+	}
+}
+/*============media querry for responsive text===============*/
+
+@media(max-width: 518px)
+{
+	html{
+		font-size: 27.4%;
+		
+	}
+}
+
+/*============media querry for top background ============*/
+@media(max-width: 518px)
+{
+	section
+	{
+
+		position: relative;	
+		width: 100%;
+		height: 50vh;
+		background: url(7.jpeg);
+		background-size: cover;
+		background-attachment: fixed;
+
+
+	}
+}
+
+
+@media(max-width: 418px)
+{
+	#margin-afterbuttonsn
+	{
+
+		margin-top: 25rem;
+	}
+}
+
+@media(max-width: 600px){
+	#STP{
+	font-size: 21px;
+	color: white;
+}
+@media(max-width: 370px)
+{
+	.login-box{
+	margin-right: 25rem;
+	width: 29rem;
+	height: 29rem;
+	color: #000;
+	top: 50%;
+	bottom: 50%;
+	padding: 1rem 1rem;
+	transform: translate(15%, 10%);
+	box-sizing: border-box;
+	box-shadow: .6rem .6rem 5rem #283593;
+	border-top-right-radius: 9rem;
+	border-bottom-left-radius: 9rem;
+}
+}
+
+@media(max-width: 444px)
+{
+	#STP{
+	font-size: 2rem;
+}
+}
+
+
+#navMargin{
+    margin-left:0px ;
+    margin-right:0px ;
+
+}
+
+
+}
+
+
+
+#mainHeading_text 
+{
+	padding-top: 12rem;
+
+}
+
+h1
+{
+	font-size: 7rem;
+	text-align: center;	
+	font-family: 'Montserrat',sans-serif;
+	font-weight: 600;
+}
+
+h2{
+	color: #212121;
+	font-family: 'Montserrat',sans-serif;
+	font-size: 2.5rem; 
+	font-weight: 900;
+
+}
+
+h3{
+	text-align: left;
+	margin-left: 3rem;
+}
+ p{
+	text-align: center;
+	font-size: 3rem;
+}
+.btn{
+	background-color: lightblue;
+	border-radius: 2.5rem;
+	text-align: center;
+	font-size: 1.9rem;
+	padding-left: 3.5%;
+	 padding-right:3.5%;
+	 margin-top: 4%
+	
+}
+
+section .content
+{
+	position: relative;
+	z-index: 1;
+	margin: auto;
+	max-width: 90rem;
+	text-align: center;
+}
+
+
+/* three button */
+
+.btn-group button {
+
+  background-color: white; /* white background */
+  width:90%;
+  border: .5rem solid #8e24aa;
+  border-bottom-style: dashed;
+  border-top-style: dashed;
+  border-radius: 2.9rem;
+  cursor: pointer; /* Pointer/hand icon */
+  margin: .5rem;
+
+
+
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.list-text{
+	color: #616161;
+	 font-size: 2rem;
+}
+
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  transform: scale(1.05); 
+  border-top-style: solid;
+  border-bottom-style: solid;
+  box-shadow: .2rem .4rem 12rem rgba(0, 0, 0, 0.46);
+}
+
+.e-block{
+
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+.carousel-nav-icon {
+   height: 4.8rem;
+   width: 4.8rem;
+   padding-right: .9rem;
+   margin-right: 3.3rem; 
+
+
+}
+
+  .carousel-item  .col, .carousel-item .col-sm, .carousel-item .col-md {
+      margin: .8rem;
+      height: 30.0rem;
+      background-size: cover;
+      background-position: center center;
+   }
+
+
+
+
+
+
+
+
+
+.backgrond-1
+{
+	margin:0;
+	padding: 0;
+	width: 100% ;
+	height: 45.0rem;
+	background-color: black;
+	position: relative;
+	background: linear-gradient(90deg, #f0027f, #75489f); 
+}
+.backgrond-1:before
+{
+	content: '';
+	position: : absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 15.0rem;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+  height: 15%;
+}
+.text-sm-center
+{
+	font-size: 2.5rem;
+	margin-left: 2.5rem;
+	margin-right: 2.5rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+.background-1{
+	background: url(5.jpeg);
+	height: 55rem;
+	position: relative;	
+	width: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.login-box{
+	margin-right: 25rem;
+	width: 49rem;
+	height: 49rem;
+	color: #000;
+	top: 50%;
+	bottom: 50%;
+	padding: 3.5rem 3.5rem;
+	transform: translate(35%, 10%);
+	box-sizing: border-box;
+	box-shadow: .6rem .6rem 5rem #283593;
+	border-top-right-radius: 9rem;
+	border-bottom-left-radius: 9rem;
+}
+.login-box input{
+	width: 100%;
+	margin-bottom: 1.5rem;
+}
+.login-box input[type="text"]{
+	border:none;
+	outline: none;
+	border-bottom: .1rem solid #ddd;
+	background:transparent;
+	font-size: 2.1rem; 
+	font-family: 'Roboto' ,sans-serif;
+	height: 3.1rem;
+	font-weight: lighter;
+	background-color: white;
+	color: black;
+}
+.login-box textarea{
+	border:none;
+	outline: none;
+	border-bottom: .1rem solid #ddd;
+	background:transparent;
+	font-size: 2.1rem; 
+	font-family: 'Roboto' ,sans-serif;
+	height: 3.1rem;
+	font-weight: lighter;
+	color: rgb(99 ,92 ,99);
+	float: left;
+	background-color: white;
+	color: black;
+}
+
+.btg{
+	border:none;
+	outline: none;
+	height: 4.1rem;
+	color: #fff;
+	background-color: rgb(252 ,3 ,86);
+	border-radius: 2.5rem;
+	font-weight: bold;
+	margin-top: 31px;
+	padding-right: 22rem;
+	padding-left: 21rem;
+}
+.login-box{
+	text-align: center;
+}
+.login-box input[type="text"]:hover{
+	cursor: pointer;
+	background-color: #ec407a;
+
+}
+.login-box textarea:hover{
+	cursor: pointer;
+	background-color: #ec407a;
+}
+::placeholder{
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+textarea :: palceholder{
+	color: black;
+}
+
+.container-Footer{
+
+	height: 18rem;
+	background: #7986cb;
+	display: flex;
+}
+.logoImg h1{
+	font-size: 2.1rem;
+	font-family: 'Brush Script MT', cursive;
+	float: left;
+	padding-left: 6rem;
+}
+#STP{
+	font-size: 4rem;
+	float: left;
+}
+
+.logoImg p{
+	float: left;
+	font-size: 2rem;
+	color: #fff;
+	text-align: center;
+}
+.contactDiv h1{
+	padding-top: 2rem;
+	font-size: 1.9rem;
+	color: #fff;
+}
+.contactDiv p{
+	color: #fff;
+	font-size: 1.8rem;
+}
+
+
+.contactDiv i{
+	color: black;
+	padding-left: 1rem;
+	padding-right: .2rem;
+}
+
+.navBarLink h1{
+	font-size: 1.9rem;
+	padding-top: 2rem;
+	color: #fff;
+	padding-left: 4rem;
+}
+.navBarLink li{
+	list-style: none;
+	font-size: 1.4rem;
+	color: #fff;
+	padding-bottom: .2rem;
+}
+
+
+
+
+
